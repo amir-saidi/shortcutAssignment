@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "uikithelper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/amir-saidi/UIKitHelper",
+      "state" : {
+        "revision" : "b1cb21cfd30297672247c66a5117415e61a4b13a",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
