@@ -21,7 +21,11 @@ class Comic: Codable {
     var day: String
     
     var dateStr: String {
-        "\(month) \(day), \(year)"
+        guard let date = getComicDate(yearStr: year, monthStr: month, dayStr: day) else {
+            return "\(month) \(day), \(year)"
+        }
+        
+        return date.toFormattedDate()
     }
     
     var issueTile: String {
@@ -42,4 +46,13 @@ class Comic: Codable {
         self.day = comicResponse.day
     }
     
+}
+
+private extension Comic {
+    func getComicDate(yearStr: String, monthStr: String, dayStr: String) -> Date? {
+        guard let year = Int(yearStr), let month = Int(monthStr), let day = Int(dayStr) else { return nil }
+        let calendar = Calendar(identifier: .gregorian)
+        let components = DateComponents(year: year, month: month, day: day)
+        return calendar.date(from: components)!
+    }
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5A8B722914F28E007D2FDF /* ComicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B712914F28E007D2FDF /* ComicView.swift */; };
+		1A5A8B752914F306007D2FDF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1A5A8B742914F306007D2FDF /* Kingfisher */; };
+		1A5A8B772914F40A007D2FDF /* StackViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B762914F40A007D2FDF /* StackViewStore.swift */; };
+		1A5A8B7A2914F8C4007D2FDF /* ComicDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B792914F8C4007D2FDF /* ComicDetails.swift */; };
+		1A5A8B7C2914FAEE007D2FDF /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B7B2914FAEE007D2FDF /* ComicCell.swift */; };
+		1A5A8B7E2914FB7E007D2FDF /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B7D2914FB7E007D2FDF /* InfoCell.swift */; };
+		1A5A8B802914FDFB007D2FDF /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B7F2914FDFB007D2FDF /* ImageExtension.swift */; };
+		1A5A8B8229150675007D2FDF /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8B8129150675007D2FDF /* DateFormatting.swift */; };
 		1A5D9A0D2913B81700DB27C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D9A0C2913B81700DB27C2 /* AppDelegate.swift */; };
 		1A5D9A0F2913B81700DB27C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D9A0E2913B81700DB27C2 /* SceneDelegate.swift */; };
 		1A5D9A172913B81700DB27C2 /* ShortcutXkcdComics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D9A152913B81700DB27C2 /* ShortcutXkcdComics.xcdatamodeld */; };
@@ -28,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A5A8B712914F28E007D2FDF /* ComicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicView.swift; sourceTree = "<group>"; };
+		1A5A8B762914F40A007D2FDF /* StackViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewStore.swift; sourceTree = "<group>"; };
+		1A5A8B792914F8C4007D2FDF /* ComicDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetails.swift; sourceTree = "<group>"; };
+		1A5A8B7B2914FAEE007D2FDF /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		1A5A8B7D2914FB7E007D2FDF /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		1A5A8B7F2914FDFB007D2FDF /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		1A5A8B8129150675007D2FDF /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
 		1A5D9A092913B81700DB27C2 /* ShortcutXkcdComics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutXkcdComics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5D9A0C2913B81700DB27C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A5D9A0E2913B81700DB27C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5A8B752914F306007D2FDF /* Kingfisher in Frameworks */,
 				1A5D9A2F2913BD0A00DB27C2 /* UIKitHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +118,9 @@
 				1A5D9A372913C2B100DB27C2 /* Constants.swift */,
 				1A5D9A392913C31100DB27C2 /* DataParser.swift */,
 				1A5D9A472913C8FE00DB27C2 /* Alert.swift */,
+				1A5A8B762914F40A007D2FDF /* StackViewStore.swift */,
+				1A5A8B7F2914FDFB007D2FDF /* ImageExtension.swift */,
+				1A5A8B8129150675007D2FDF /* DateFormatting.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -129,6 +148,7 @@
 			children = (
 				1A5D9A272913BA1D00DB27C2 /* Home.swift */,
 				1A5D9A452913C84900DB27C2 /* HomeViewModel.swift */,
+				1A5A8B792914F8C4007D2FDF /* ComicDetails.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -144,6 +164,9 @@
 		1A5D9A2B2913BCB500DB27C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A5A8B712914F28E007D2FDF /* ComicView.swift */,
+				1A5A8B7B2914FAEE007D2FDF /* ComicCell.swift */,
+				1A5A8B7D2914FB7E007D2FDF /* InfoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +225,7 @@
 			name = ShortcutXkcdComics;
 			packageProductDependencies = (
 				1A5D9A2E2913BD0A00DB27C2 /* UIKitHelper */,
+				1A5A8B742914F306007D2FDF /* Kingfisher */,
 			);
 			productName = ShortcutXkcdComics;
 			productReference = 1A5D9A092913B81700DB27C2 /* ShortcutXkcdComics.app */;
@@ -233,6 +257,7 @@
 			mainGroup = 1A5D9A002913B81700DB27C2;
 			packageReferences = (
 				1A5D9A2D2913BD0900DB27C2 /* XCRemoteSwiftPackageReference "UIKitHelper" */,
+				1A5A8B732914F306007D2FDF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1A5D9A0A2913B81700DB27C2 /* Products */;
 			projectDirPath = "";
@@ -260,12 +285,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5A8B722914F28E007D2FDF /* ComicView.swift in Sources */,
 				1A5D9A322913C26D00DB27C2 /* NetworkingService.swift in Sources */,
+				1A5A8B8229150675007D2FDF /* DateFormatting.swift in Sources */,
 				1A5D9A422913C7F300DB27C2 /* Comic.swift in Sources */,
 				1A5D9A0D2913B81700DB27C2 /* AppDelegate.swift in Sources */,
 				1A5D9A482913C8FE00DB27C2 /* Alert.swift in Sources */,
 				1A5D9A0F2913B81700DB27C2 /* SceneDelegate.swift in Sources */,
+				1A5A8B7C2914FAEE007D2FDF /* ComicCell.swift in Sources */,
+				1A5A8B7A2914F8C4007D2FDF /* ComicDetails.swift in Sources */,
 				1A5D9A362913C28800DB27C2 /* Endpoints.swift in Sources */,
+				1A5A8B7E2914FB7E007D2FDF /* InfoCell.swift in Sources */,
+				1A5A8B802914FDFB007D2FDF /* ImageExtension.swift in Sources */,
+				1A5A8B772914F40A007D2FDF /* StackViewStore.swift in Sources */,
 				1A5D9A402913C37500DB27C2 /* ComicsApiProtocol.swift in Sources */,
 				1A5D9A442913C82700DB27C2 /* ComicsApi.swift in Sources */,
 				1A5D9A282913BA1D00DB27C2 /* Home.swift in Sources */,
@@ -486,6 +518,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1A5A8B732914F306007D2FDF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		1A5D9A2D2913BD0900DB27C2 /* XCRemoteSwiftPackageReference "UIKitHelper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/amir-saidi/UIKitHelper";
@@ -497,6 +537,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1A5A8B742914F306007D2FDF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A5A8B732914F306007D2FDF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		1A5D9A2E2913BD0A00DB27C2 /* UIKitHelper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1A5D9A2D2913BD0900DB27C2 /* XCRemoteSwiftPackageReference "UIKitHelper" */;

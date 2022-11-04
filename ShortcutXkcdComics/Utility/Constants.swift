@@ -15,4 +15,10 @@ enum Constants {
         static let baseURL = "https://xkcd.com"
         static let searchUrl = "https://relevantxkcd.appspot.com"
     }
+    
+    enum TableCellIdentifiers {
+        static let cell = "TableCell"
+        static let comicCell = "ComicCell"
+        static let infoCell = "InfoCell"
+    }
 }
